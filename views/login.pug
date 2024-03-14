@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1 #{title}
+    .container-form
+        form(action='/signup' method='POST')
+        
+        label(for='username') Nombre
+        input(type='text', name='username', required)
+
+        label(for='password') Contraseña
+        input(type='password', name='password', required)
+
+        button(type='submit') Iniciar sesión
+            
+        a(href='/registro') ¿No tienes cuenta? Regístrate

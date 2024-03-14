@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 #{title}
+  .conteiner-banner
+    img(src=`/images/portada.jpg`, alt=banner)
+  
+  .conteiner-buscador
+    p Bienvenido a la tienda en linea de playeras chidas. Revisa el cátalogo y encuentra la playera que más te guste y agrégala al carrito de compras.
+    form(action='/buscar-producto', method='GET' class='search-bar')
+      input(type='text', name='q', placeholder='Buscar playera')
+      button(type='submit') Buscar

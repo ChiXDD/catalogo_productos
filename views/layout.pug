@@ -1,0 +1,22 @@
+// layout.pug
+doctype html
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/css/styles.css')
+  body
+    nav
+      ul
+        li
+          a(href='/') Inicio
+        li
+          a(href='/catalogo') Catálogo
+        li
+          a(href='/carrito') Carrito de Compra (#{carrito.length})
+        li
+          a(href='/registro') Registrarse
+        li
+          a(href='/login') Iniciar sesión
+
+    .container
+      block content
